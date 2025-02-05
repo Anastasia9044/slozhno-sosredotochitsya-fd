@@ -40,3 +40,8 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
