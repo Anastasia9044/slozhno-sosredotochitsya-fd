@@ -1,10 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 :root {
-  
 }
 
 .page {
-  width: minmax(375px 1024px);
   font-family: var(--main-font-family), sans-serif;
   background-image: var(--bg-image);
   background-repeat: no-repeat;
@@ -13,11 +11,12 @@
   background-attachment: fixed;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
 .header {
   position: relative;
   display: grid;
-
 }
+
 .rec {
   position: absolute;
   top: 10px;
@@ -36,6 +35,7 @@
   width: 25px;
   height: 25px;
 }
+
 .frame_right {
   top: 10px;
   right: 10px;
@@ -48,8 +48,8 @@
   left: 10px;
   border-left: 1px solid var(--text-color);
   border-bottom: 1px solid var(--text-color);
-
 }
+
 .circle {
   position: absolute;
   top: 18px;
@@ -60,8 +60,8 @@
   border-radius: 50%;
   background-color: var(--text-color);
   box-shadow: 0px 0px 4px 2px var(--text-color);
-
 }
+
 .header__theme-menu {
   justify-self: end;
   font-weight: 400;
@@ -70,6 +70,7 @@
   margin-top: 75px;
   color: var(--text-color);
 }
+
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
@@ -154,17 +155,17 @@
 .article__why {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 
-  "grig_why"
-  "grid_multitasking"
-  "grid_dopamine";
+  grid-template-areas:
+    "grig_why"
+    "grid_multitasking"
+    "grid_dopamine";
   margin-top: 40px;
 }
 
 .decor__text {
   background-color: var(--text-color);
   color: var(--bg-color);
-} 
+}
 
 .article__title__text {
   font-weight: 700;
@@ -184,7 +185,6 @@
 
 .grid_multitasking {
   grid-area: grid_multitasking;
-
 }
 
 .grid_dopamine {
@@ -193,6 +193,7 @@
 
 .article__font_text {
   font-weight: 400;
+  margin-top: 10px;
 }
 
 .article__decor_text {
@@ -208,17 +209,18 @@
 .article__what {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 
-  "grid_what"
-  "grid_multitasking"
-  "grid_food" 
-  "grid_gadget";
+  grid-template-areas:
+    "grid_what"
+    "grid_multitasking"
+    "grid_food"
+    "grid_gadget";
   margin-top: 50px;
 }
 
 .grid_what {
   grid-area: grid_what;
 }
+
 .grid_food {
   grid-area: grid_food;
 }
@@ -255,13 +257,13 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  grid-template-areas: 
-  "grid_how"
-  "grid_five"
-  "grid_music" 
-  "grid_walking"
-  "grid_food"
-  "grid_book";
+  grid-template-areas:
+    "grid_how"
+    "grid_five"
+    "grid_music"
+    "grid_walking"
+    "grid_food"
+    "grid_book";
   margin-top: 50px;
 }
 
@@ -269,9 +271,9 @@
   margin-bottom: 10px;
 }
 
-.grid_article_how {
-  display: grid;
-  gap: 10px;
+.article__font_text-new {
+  margin-top: 19px;
+  margin-bottom: 20px;
 }
 
 .gallery {
@@ -319,7 +321,7 @@
     top: 20px;
     right: 20px;
   }
-  
+
   .frame_left {
     bottom: 20px;
     left: 20px;
@@ -355,19 +357,19 @@
     margin-top: 60px;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    grid-template-areas: 
-    "grid_why grid_multitasking"
-    ". grid_dopamine";
+    grid-template-areas:
+      "grid_why grid_multitasking"
+      ". grid_dopamine";
   }
 
   .article__what {
     margin-top: 80px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "grid_what . ."
-    "grid_multitasking grid_multitasking grid_multitasking"
-    "grid_food grid_food grid_food"
-    "grid_gadget grid_gadget grid_gadget";
+    grid-template-areas:
+      "grid_what . ."
+      "grid_multitasking grid_multitasking grid_multitasking"
+      "grid_food grid_food grid_food"
+      "grid_gadget grid_gadget grid_gadget";
   }
   .article__title__text-new {
     margin-bottom: 10px;
@@ -376,12 +378,12 @@
     margin-top: 80px;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    grid-template-areas: 
-    "grid_how grid_five"
-    ". grid_music"
-    ". grid_walking"
-    ". grid_food"
-    ". grid_book";
+    grid-template-areas:
+      "grid_how grid_five"
+      ". grid_music"
+      ". grid_walking"
+      ". grid_food"
+      ". grid_book";
   }
   .gallery {
     margin-top: 79px;
@@ -403,26 +405,26 @@
   .sunset {
     grid-column: span 2;
   }
-  
+
   .ice-cream {
     grid-row: span 2;
     grid-column: span 1;
   }
-  
+
   .tape {
     grid-row: span 2;
     grid-column: span 1;
   }
-  
+
   .books {
     grid-row: span 1;
     grid-column: span 1;
   }
-  
+
   .street {
     grid-column: span 2;
   }
-  
+
   .footer {
     position: relative;
     margin-top: 60px;
@@ -435,7 +437,6 @@
   .footer_title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin: 0;
-
   }
 
   .footer_frame_right {
@@ -444,7 +445,7 @@
     border-right: 1px solid var(--text-color);
     border-top: 1px solid var(--text-color);
   }
-  
+
   .footer_frame_left {
     bottom: 20px;
     left: 20px;
@@ -455,7 +456,7 @@
 
 @media (min-width: 1024px) {
   .header__theme-menu {
-    margin-top: 20px; 
+    margin-top: 20px;
     justify-self: center;
   }
 
@@ -466,7 +467,6 @@
     align-items: center;
     gap: 36px;
     list-style: none;
-
   }
 
   .header__title {
@@ -483,9 +483,9 @@
 
   .article__what {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "grid_what . ."
-    "grid_multitasking grid_food grid_gadget";
+    grid-template-areas:
+      "grid_what . ."
+      "grid_multitasking grid_food grid_gadget";
   }
 
   .footer {
