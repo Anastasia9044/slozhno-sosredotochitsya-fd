@@ -1,7 +1,7 @@
 
 .page {
   font-family: var(--main-font-family), sans-serif;
-  background-image: var(--bg-image);
+  background-image: var(--bg-image, );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -283,8 +283,8 @@
 }
 
 .article__font_text-new {
-  margin-top: 19px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .gallery {
@@ -439,7 +439,7 @@
 
   .footer {
     position: relative;
-    margin-top: 60px;
+    margin-top: 40px;
     display: grid;
     align-content: center;
     justify-content: center;
