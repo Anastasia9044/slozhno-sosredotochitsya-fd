@@ -15,6 +15,7 @@
 .header {
   position: relative;
   display: grid;
+  block-size: 100vh;
 }
 
 .rec {
@@ -206,6 +207,14 @@
   text-decoration: none;
 }
 
+.link_decor:hover {
+  border-block-end: 1px solid var(--text-color);
+}
+
+.link_decor:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
 .article__what {
   display: grid;
   grid-template-columns: 1fr;
@@ -289,6 +298,7 @@
 }
 
 .footer {
+  block-size: 100vh;
   margin-top: 40px;
   display: grid;
   align-items: center;
@@ -479,6 +489,7 @@
     margin-left: 513px;
     margin-bottom: 134px;
     width: 491px;
+    justify-self: end;
   }
 
   .article__what {
