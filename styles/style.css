@@ -301,8 +301,13 @@
   margin-right: 10px;
 }
 
+.gallery_image_list {
+  display: grid;
+  gap: 10px;
+}
 .gallery__image {
   inline-size: 100%;
+  block-size: auto;
 }
 
 .footer {
