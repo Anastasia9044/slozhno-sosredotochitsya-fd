@@ -384,15 +384,27 @@
   .article__why {
     margin-top: 60px;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 10px;
     grid-template-areas:
       "grid_why grid_multitasking"
       ". grid_dopamine";
   }
 
+  .grid_multitasking {
+    display: grid;
+    gap: 10px;
+  }
+
+  .grid_dopamine {
+    display: grid;
+    gap: 10px;
+  }
+
   .article__what {
-    margin-top: 80px;
+    margin-top: 70px;
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
     grid-template-areas:
       "grid_what . ."
       "grid_multitasking grid_multitasking grid_multitasking"
@@ -400,11 +412,14 @@
       "grid_gadget grid_gadget grid_gadget";
   }
 
+  .grid_what {
+    margin-bottom: 10px;
+  }
   .article__how {
-    margin-top: 80px;
+    margin-top: 70px;
     grid-template-columns: 1fr 2fr;
-    row-gap: 0;
-    column-gap: 10px;
+    row-gap: 10px;
+    column-gap: 20px;
     grid-template-areas:
       "grid_how grid_five"
       ". grid_music"
@@ -415,7 +430,9 @@
 
   .article__title__text-new {
     margin-bottom: 20px;
+    margin-top: 0;
   }
+
   .gallery {
     margin-top: 69px;
     gap: 20px;
@@ -458,7 +475,7 @@
 
   .footer {
     position: relative;
-    margin-top: 40px;
+    margin-top: 60px;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -485,34 +502,30 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .header__theme-menu {
     margin-top: 20px;
+    align-self: start;
     justify-self: center;
   }
 
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 36px;
+    gap: 10px;
     list-style: none;
   }
 
   .header__title {
     margin-top: 273px;
     margin-bottom: 114px;
-    margin-right: 265px;
   }
 
   .header__container_text {
-    margin-left: 513px;
-    margin-bottom: 134px;
     width: 491px;
-    justify-self: end;
+    margin-right: 20px;
+    margin-left: 513px;
   }
-
   .article__what {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
