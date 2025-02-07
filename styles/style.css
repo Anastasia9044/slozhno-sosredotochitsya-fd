@@ -2,6 +2,7 @@
 .page {
   font-family: var(--main-font-family), sans-serif;
   background-image: var(--bg-image, );
+  background-color: var(--bg-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -164,6 +165,13 @@
 }
 
 .article__title__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
@@ -204,6 +212,11 @@
 }
 
 .article__decor_text {
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
   color: var(--article-text);
 }
 
@@ -365,6 +378,11 @@
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .article__font_text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .article__why {
     margin-top: 60px;
     grid-template-columns: 1fr 2fr;
@@ -383,13 +401,12 @@
       "grid_food grid_food grid_food"
       "grid_gadget grid_gadget grid_gadget";
   }
-  .article__title__text-new {
-    margin-bottom: 10px;
-  }
+
   .article__how {
     margin-top: 80px;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    row-gap: 0;
+    column-gap: 20px;
     grid-template-areas:
       "grid_how grid_five"
       ". grid_music"
@@ -397,8 +414,12 @@
       ". grid_food"
       ". grid_book";
   }
+
+  .article__title__text-new {
+    margin-bottom: 20px;
+  }
   .gallery {
-    margin-top: 79px;
+    margin-top: 69px;
     gap: 20px;
   }
 
