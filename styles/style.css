@@ -54,7 +54,7 @@
   right: 19px;
   width: 9px;
   height: 9px;
-  background-color: white;
+  background-color: var(--text-color);
   border-radius: 50%;
   box-shadow: 0px 0px 4px 2px var(--text-color);
 }
@@ -209,7 +209,7 @@
 
 .link_decor {
   color: var(--article-text);
-  text-shadow: 2px 2px 0 var(--text-color);
+  text-shadow: 2px 1px 0 var(--text-color);
   text-decoration: none;
 }
 
@@ -305,7 +305,6 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-auto-rows: 668px;
   position: relative;
 }
 
