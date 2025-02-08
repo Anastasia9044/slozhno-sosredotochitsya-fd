@@ -6,7 +6,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 .header {
@@ -305,6 +304,7 @@
   display: grid;
   gap: 10px;
 }
+
 .gallery__image {
   inline-size: 100%;
   block-size: auto;
@@ -334,6 +334,7 @@
 }
 
 @media (min-width: 768px) {
+
   .rec {
     top: 20px;
     right: 48px;
@@ -353,6 +354,7 @@
     top: 28px;
     right: 29px;
   }
+
   .header__theme-menu {
     margin-right: 20px;
     margin-top: 192px;
@@ -381,6 +383,7 @@
     margin-top: 0;
     margin-bottom: 10px;
   }
+
   .article__why {
     margin-top: 60px;
     grid-template-columns: 1fr 2fr;
@@ -415,6 +418,17 @@
   .grid_what {
     margin-bottom: 10px;
   }
+
+  .grid_food {
+    display: grid;
+    gap: var(--gap_food);
+  }
+
+  .grid_gadget {
+    display: grid;
+    gap: 10px;
+  }
+
   .article__how {
     margin-top: 70px;
     grid-template-columns: 1fr 2fr;
@@ -426,6 +440,7 @@
       ". grid_walking"
       ". grid_food"
       ". grid_book";
+      --gap-food: 0;
   }
 
   .article__title__text-new {
@@ -503,6 +518,7 @@
 }
 
 @media (width >= 1024px) {
+
   .header__theme-menu {
     margin-top: 20px;
     align-self: start;
@@ -526,14 +542,34 @@
     margin-right: 20px;
     margin-left: 513px;
   }
+
   .article__what {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content;
     grid-template-areas:
       "grid_what . ."
-      "grid_multitasking grid_food grid_gadget";
+      "grid_multitasking grid_food grid_gadget"
+  }
+
+  .grid_multitasking {
+    max-height: 384px;
+  }
+  
+  .grid_food {
+    max-height: 361px;
+  }
+
+  .article__how .grid_food {
+    gap: 0;
+  }
+
+  .gallery {
+    margin-top: 70px;
   }
 
   .footer {
     grid-auto-rows: 768px;
   }
+
+  
 }
