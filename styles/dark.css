@@ -21,26 +21,6 @@
 
 }
 
-.header__theme-menu-button {
-  background-color: transparent;
-  color: var(--bg-color-text);
-}
-
-.cover__title {
-  color: var(--title-color);
-  font-family: var(--main-font-family);
-  line-height: 95.7px;
-  text-align: left;
-}
-
-.cover__text {
-  margin-top: 55px;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: var(--text-cover-color);
-  background-color: var(--bg-color-text);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-image: url(../images/cover-image-dark.png);
