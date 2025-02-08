@@ -454,6 +454,8 @@
     margin-top: 69px;
     gap: 20px;
     max-height: 823px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .gallery_image_list {
@@ -544,7 +546,7 @@
     margin-bottom: 135px;
     max-height: 71px;
   }
-
+  
   .article__what {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content;
