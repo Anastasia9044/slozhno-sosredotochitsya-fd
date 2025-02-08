@@ -22,12 +22,6 @@
     --border-color: rgba(255, 0, 112, 0.4);
 }
 
-
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image: var(--bg-image);
-  background-color: var(--bg-color);
-}
 .header__theme-menu-button {
   background-color: transparent;
   color: var(--bg-color-text);
@@ -39,6 +33,7 @@
   line-height: 95.7px;
   text-align: left;
 }
+
 .cover__text {
   margin-top: 55px;
   margin-left: 10px;
@@ -46,3 +41,4 @@
   color: var(--text-cover-color);
   background-color: var(--bg-color-text);
 }
+

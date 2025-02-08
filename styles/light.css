@@ -20,12 +20,6 @@
 
 }
 
-.theme-light .page {
-  background-image: var(--bg-image);
-  background-color: var(--bg-color);
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}
-
 .theme-light .rec {
   display: none;
 }
