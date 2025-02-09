@@ -11,7 +11,9 @@
 .header {
   position: relative;
   display: grid;
+  grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .decorated-zone {
@@ -70,16 +72,19 @@
   justify-self: end;
   font-weight: 400;
   font-size: 18px;
-  margin-right: 10px;
   margin-top: 65px;
   color: var(--text-color);
+  min-inline-size: 355px;
+  max-inline-size: 50%;
+  
 }
 
 .header__theme-menu-list {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+  display: grid;
   gap: 10px;
+  justify-self: end;
+  align-self: center;
+  margin-right: 10px;
   list-style: none;
 }
 
@@ -328,6 +333,19 @@
 
 .footer_title {
   text-shadow: 2px 2px var(--actent-color);
+}
+
+.theme-light .header__container_text {
+  background-color: var(--decor-text-color);
+}
+
+.theme-light .decor__text {
+  color: var(--text-color);
+  background-color: var(--decor-text-color);
+}
+.theme-light .link_decor {
+  color: var(--text-color);
+  text-shadow: 2px 2px 0 var(--decor-text-color);
 }
 
 @media (width >= 768px) {

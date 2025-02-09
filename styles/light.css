@@ -10,19 +10,6 @@
   --border-color: rgba(50, 49, 45, 0.4);
 }
 
-.theme-light .header__container_text {
-  background-color: var(--decor-text-color);
-}
-
-.theme-light .decor__text {
-  color: var(--text-color);
-  background-color: var(--decor-text-color);
-}
-.theme-light .link_decor {
-  color: var(--text-color);
-  text-shadow: 2px 2px 0 var(--decor-text-color);
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(../images/cover-image-light.png);
