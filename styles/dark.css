@@ -10,25 +10,35 @@
     чем стили в медиазапросе предпочтений пользователя
 
   */
-    --bg-image: url(../images/cover-image-dark.png);
-    --title-color: rgba(219, 0, 255, 1);
-    --bg-color: rgba(0, 0, 40, 1);
-    --text-color: rgba(255, 0, 112, 1);
-    --article-text: rgba(241, 178, 206, 1);
-    --actent-color: rgba(255, 0, 112, 1);
-    --h2-font-size: clamp(1.875rem, 1.6607rem + 0.9524vw, 2.375rem);
-    --h3-font-size: clamp(1.5rem, 1.3125rem + 0.8333vw, 1.9375rem);
-}
+  --main-font-family: "IBM Plex Mono";
+  --main-text-size: 18px;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --bg-image: url(../images/cover-image-dark.png);
+  --title-color: rgba(219, 0, 255, 1);
+  --bg-color: rgba(0, 0, 40, 1);
+  --discription-color: rgba(255, 0, 112, 1);
+  --main-text-color: rgba(255, 0, 112, 1);
+  --text-color: rgba(0, 0, 40, 1);
+  --article-text: rgba(241, 178, 206, 1);
+  --actent-color: rgba(255, 0, 112, 1);
+  --border-color: rgba(255, 0, 112, 1);
+  --gap_food: 10px;
+  }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-image: url(../images/cover-image-dark.png);
-    --title-color: rgba(219, 0, 255, 1);
-    --bg-color: rgba(0, 0, 40, 1);
-    --text-color: rgba(255, 0, 112, 1);
-    --article-text: rgba(241, 178, 206, 1);
-    --actent-color: rgba(255, 0, 112, 1);
-    --h2-font-size: clamp(1.875rem, 1.6607rem + 0.9524vw, 2.375rem);
-    --h3-font-size: clamp(1.5rem, 1.3125rem + 0.8333vw, 1.9375rem);
+    --main-font-family: "IBM Plex Mono";
+  --main-text-size: 18px;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --bg-image: url(../images/cover-image-dark.png);
+  --title-color: rgba(219, 0, 255, 1);
+  --bg-color: rgba(0, 0, 40, 1);
+  --discription-color: rgba(255, 0, 112, 1);
+  --main-text-color: rgba(255, 0, 112, 1);
+  --text-color: rgba(0, 0, 40, 1);
+  --article-text: rgba(241, 178, 206, 1);
+  --actent-color: rgba(255, 0, 112, 1);
+  --border-color: rgba(255, 0, 112, 1);
+  --gap_food: 10px;
   }
 }

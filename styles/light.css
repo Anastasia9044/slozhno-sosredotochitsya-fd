@@ -3,8 +3,9 @@
   --bg-image: url(../images/cover-image-light.png);
   --title-color: rgba(255, 194, 230, 1);
   --bg-color: rgba(255, 241, 247, 1);
+  --main-text-color: rgba(53, 52, 48, 1);
   --text-color: rgba(53, 52, 48, 1);
-  --decor-text-color: rgba(255, 141, 203, 1);
+  --discription-color: rgba(255, 141, 203, 1);
   --article-text: rgba(53, 52, 48, 1);
   --actent-color: rgba(255, 141, 203, 1);
   --border-color: rgba(50, 49, 45, 0.4);
@@ -13,12 +14,14 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(../images/cover-image-light.png);
-    --title-color: rgba(255, 194, 230, 1);
-    --bg-color: rgba(255, 241, 247, 1);
-    --text-color: rgba(53, 52, 48, 1);
-    --decor-text-color: rgba(255, 141, 203, 1);
-    --article-text: rgba(53, 52, 48, 1);
-    --actent-color: rgba(255, 141, 203, 1);
-    --border-color: rgba(50, 49, 45, 0.4);
+  --title-color: rgba(255, 194, 230, 1);
+  --bg-color: rgba(255, 241, 247, 1);
+  --main-text-color: rgba(53, 52, 48, 1);
+  --text-color: rgba(53, 52, 48, 1);
+  --article-text: rgba(53, 52, 48, 1);
+  --decor-text-color: rgba(255, 141, 203, 1);
+  --discription-color: rgba(255, 141, 203, 1);
+  --actent-color: rgba(255, 141, 203, 1);
+  --border-color: rgba(50, 49, 45, 0.4);
   }
 }

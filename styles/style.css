@@ -27,21 +27,21 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  border-color: var(--text-color);
+  border-color: var(--main-text-color);
   inline-size: 25px;
   block-size: 25px;
 }
 
 .decorated-zone::before {
   inset: 10px 10px auto auto;
-  border-inline-end: 1px solid var(--text-color);
-  border-block-start: 1px solid var(--text-color);
+  border-inline-end: 1px solid var(--main-text-color);
+  border-block-start: 1px solid var(--main-text-color);
 }
 
 .decorated-zone::after {
   inset: auto auto 10px 10px;
-  border-inline-start: 1px solid var(--text-color);
-  border-block-end: 1px solid var(--text-color);
+  border-inline-start: 1px solid var(--main-text-color);
+  border-block-end: 1px solid var(--main-text-color);
 }
 
 .rec {
@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--text-color);
+  color: var(--main-text-color);
 }
 
 .rec::before {
@@ -62,10 +62,14 @@
 .rec::after {
   content: "";
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--text-color);
-  background-color: var(--text-color);
+  box-shadow: 0 0 4px 2px var(--main-text-color);
+  background-color: var(--main-text-color);
   inline-size: 9px;
   block-size: 9px;
+}
+
+.theme-light .rec {
+  display: none;
 }
 
 .header__theme-menu {
@@ -73,7 +77,7 @@
   font-weight: 400;
   font-size: 18px;
   margin-top: 65px;
-  color: var(--text-color);
+  color: var(--main-text-color);
   min-inline-size: 355px;
   max-inline-size: 50%;
   
@@ -108,12 +112,12 @@
 }
 
 .header__theme-menu-button_active {
-  border-color: currentColor;
+  border-color: var(--main-text-color);
   pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--text-color);
+  outline: 1px solid var(--main-text-color);
 }
 
 .header__theme-menu-button:focus {
@@ -121,7 +125,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end-color: currentColor;
+  border-block-end-color: var(--main-text-color);
 }
 
 .title {
@@ -143,12 +147,20 @@
 }
 
 .header__container_text {
-  background-color: var(--text-color);
   margin-right: 10px;
   margin-left: 0;
   margin-bottom: 66px;
   font-weight: 400;
   font-size: 18px;
+}
+
+.title_text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  background-color: var(--discription-color);
+  color: var(--text-color);
 }
 
 .article {
@@ -170,8 +182,8 @@
 }
 
 .decor__text {
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  background-color: var(--discription-color);
+  color: var(--text-color);
 }
 
 .article__title__text {
@@ -184,13 +196,7 @@
 }
 
 .article__title {
-  color: var(--text-color);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  color: var(--main-text-color);
 }
 
 .grig_why {
@@ -225,7 +231,7 @@
 
 .link_decor {
   color: var(--article-text);
-  text-shadow: 1px 1px 0 var(--text-color);
+  text-shadow: 1px 1px 0 var(--actent-color);
   text-decoration: none;
 }
 
@@ -335,19 +341,6 @@
   text-shadow: 2px 2px var(--actent-color);
 }
 
-.theme-light .header__container_text {
-  background-color: var(--decor-text-color);
-}
-
-.theme-light .decor__text {
-  color: var(--text-color);
-  background-color: var(--decor-text-color);
-}
-.theme-light .link_decor {
-  color: var(--text-color);
-  text-shadow: 2px 2px 0 var(--decor-text-color);
-}
-
 @media (width >= 768px) {
 
   .rec {
@@ -361,30 +354,25 @@
   
   .decorated-zone::before {
     inset: 20px 20px auto auto;
-    border-inline-end: 1px solid var(--text-color);
-    border-block-start: 1px solid var(--text-color);
   }
   
   .decorated-zone::after {
     inset: auto auto 20px 20px;
-    border-inline-start: 1px solid var(--text-color);
-    border-block-end: 1px solid var(--text-color);
   }
 
   .header__theme-menu {
-    margin-right: 20px;
+    margin-right: 10px;
     margin-top: 170px;
-    color: var(--text-color);
   }
 
   .header__title {
     margin-left: -20px;
-    margin-top: 125px;
-    margin-bottom: 120px;
+    margin-top: 50px;
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__container_text {
+    margin-top: 111px;
     margin-left: 364px;
     margin-right: 20px;
     width: 364px;
@@ -533,7 +521,7 @@
   }
   .header__theme-menu {
     margin-top: 0;
-    margin-left: 0;
+    margin-left: -115px;
     justify-self: center;
     align-self: start;
   }
@@ -551,6 +539,7 @@
   }
 
   .header__container_text {
+    margin-top: 0;
     margin-inline-start: -20px;
     width: 491px;
     margin-left: 493px;
