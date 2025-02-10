@@ -11,6 +11,10 @@
   --border-color: rgba(50, 49, 45, 0.4);
 }
 
+.theme-light .rec-element {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(../images/cover-image-light.png);
@@ -23,5 +27,9 @@
   --discription-color: rgba(255, 141, 203, 1);
   --actent-color: rgba(255, 141, 203, 1);
   --border-color: rgba(50, 49, 45, 0.4);
+  }
+
+  .theme-auto .rec-element {
+    display: none;
   }
 }
