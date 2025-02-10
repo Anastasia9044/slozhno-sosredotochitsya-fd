@@ -11,7 +11,7 @@
   --border-color: rgba(50, 49, 45, 0.4);
 }
 
-.theme-light .rec-element {
+.theme-light .rec {
   display: none;
 }
 
@@ -29,7 +29,7 @@
   --border-color: rgba(50, 49, 45, 0.4);
   }
 
-  .theme-auto .rec-element {
+  .theme-auto .rec {
     display: none;
   }
 }
