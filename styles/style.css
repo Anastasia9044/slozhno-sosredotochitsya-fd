@@ -10,7 +10,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-size: inherit;
 }
 
 .decorated-zone {
@@ -109,7 +108,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid currentColor;
+  outline: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button:focus {
