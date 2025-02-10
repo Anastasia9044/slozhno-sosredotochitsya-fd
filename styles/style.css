@@ -303,8 +303,6 @@
     grid-column: 1 / 4;
   }
 
- 
-
   .article__how h2 {
     grid-row: 1 / 3;
   }
@@ -373,6 +371,10 @@
 
   .header__theme-menu-list {
     flex-direction: row;
+  }
+
+  .article__font_text {
+    word-spacing: 0;
   }
 
   .article__what h2 {
