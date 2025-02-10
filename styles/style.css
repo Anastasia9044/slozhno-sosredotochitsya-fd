@@ -187,12 +187,17 @@
 
 .article__font_text {
   font-weight: 400;
+  font-size: 18px;
   line-height: 23.4px;
   text-align: left;
-  letter-spacing: 0;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   margin-top: 10px;
+  word-spacing: 1.5px;
+}
+
+.article__how {
+  padding-right: 20px;
 }
 
 .article__decor_text {
@@ -209,7 +214,7 @@
 
 .link_decor {
   color: var(--article-text);
-  text-shadow: 1px 1px 0 var(--actent-color);
+  text-shadow: 2px 1px 0 var(--actent-color);
   text-decoration: none;
 }
 
@@ -297,6 +302,8 @@
   .article__what article {
     grid-column: 1 / 4;
   }
+
+ 
 
   .article__how h2 {
     grid-row: 1 / 3;
