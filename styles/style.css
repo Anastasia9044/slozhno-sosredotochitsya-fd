@@ -193,7 +193,6 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   margin-top: 10px;
-  word-spacing: 1.5px;
 }
 
 .article__how {
@@ -283,6 +282,10 @@
   .header__title {
     margin-inline-start: -20px;
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .article__font_text {
+    word-spacing: 1.5px;
   }
 
   .all_article {
