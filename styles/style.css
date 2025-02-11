@@ -165,9 +165,7 @@
 .article {
   font-size: inherit;
   display: grid;
-  grid-template-rows: auto;
   gap: 20px;
-  grid-auto-flow: dense;
 }
 
 .decor__text {
@@ -209,6 +207,11 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+.card_list {
+  display: grid;
+  row-gap: 20px;
 }
 
 .link_decor {
