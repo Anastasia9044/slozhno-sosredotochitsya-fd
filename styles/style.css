@@ -103,12 +103,15 @@
 }
 
 .header__theme-menu-button_active {
-  border-color: currentColor;
   pointer-events: none;
 }
 
+.header__theme-menu-item > .header__theme-menu-button_active {
+  border: 1px solid var(--main-text-color);
+}
+
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--border-color);
+  border: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button:focus {
@@ -116,7 +119,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end-color: currentColor;
+  border-block-end: 1px solid var(--main-text-color);
 }
 
 .title {
@@ -164,6 +167,7 @@
   display: grid;
   grid-template-rows: auto;
   gap: 20px;
+  grid-auto-flow: dense;
 }
 
 .decor__text {
@@ -298,7 +302,7 @@
     grid-column: 2 / 4;
   }
 
-  .article__what article {
+  .card_list {
     grid-column: 1 / 4;
   }
 
@@ -376,12 +380,15 @@
     word-spacing: 0;
   }
 
-  .article__what h2 {
-    grid-row: 1 / 2;
+  .card_list {
+    display: grid;
+    grid-column: span 3;
+    grid-row: 2;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
 
-  .article__what article {
-    grid-row: 2 / 3;
+  .card_list .card {
     grid-column: auto;
   }
 }
